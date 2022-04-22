@@ -1,6 +1,6 @@
 # Bigxyt-Task
 ## General info
-Simple orderbook-like python application
+Simple orderbook like python application
 ## Technologies
 Python
 ## Setup
