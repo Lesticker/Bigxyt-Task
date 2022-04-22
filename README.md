@@ -17,7 +17,7 @@ q - Quit
 ```
 ## To do
 * When order is in remove state subtract summary quantity of orders
-* Add headers when displaying orders
+* Add headers when displaying orders and best prices
 * ...
 
 
