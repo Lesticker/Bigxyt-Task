@@ -51,9 +51,7 @@ while user_input != "q":
             else:
                 break
 
-        
         order = input("Buy or Sell order? ")
-            
         type = input("Add or Remove? ")
 
         while True:
