@@ -51,9 +51,20 @@ while user_input != "q":
             else:
                 break
 
-        order = input("Buy or Sell order? ")
-        type = input("Add or Remove? ")
+        while True:
+            order = input("Buy or Sell order? ").capitalize()
+            if order in ("Buy", "Sell"):
+                break
+            else:
+                print("Try again")
 
+        while True:
+            type = input("Add or Remove? ").capitalize()
+            if type in ("Add", "Remove"):
+                break
+            else:
+                print("Try again")
+        
         while True:
             try:
                 price = float(input("Enter price: "))
