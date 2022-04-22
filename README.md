@@ -15,5 +15,10 @@ There will be 4 options to choose
 3 - Find best prices
 q - Quit
 ```
+## To do
+* When order is in remove state subtract summary quantity of orders
+* Add headers when displaying orders
+* ...
+
 
 
