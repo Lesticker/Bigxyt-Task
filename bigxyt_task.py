@@ -42,13 +42,13 @@ while user_input != "q":
 
     if user_input == "1":
         print("Enter Order")
-
         while True:
             try:
-                id = int(input("enter order id: ").zfill(3))
+                new_id = int(input("enter order id: "))
             except ValueError:
                 print("This is not a number. Try again.")
             else:
+                id = str(new_id).zfill(3)
                 break
 
         while True:
@@ -80,7 +80,7 @@ while user_input != "q":
                 print("This is not a number. Try again.")
             else:
                 break
-
+        
         new_order = Activity(id, order, type, price, quantity)
         orders.append(new_order)
 
@@ -91,12 +91,10 @@ while user_input != "q":
         print("New order has been made")
 
     elif user_input == "2":
-
         for i in orders:
             print(i)
 
     elif user_input == "3":
-
         count = len(open("orders.csv").readlines(  ))
         f = open("orders.csv", "r")
 
